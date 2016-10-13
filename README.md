@@ -23,7 +23,6 @@ This project requires the student to read text files into R dataframes, to analy
 ##run_analysis.R user notes
 
 Before the reader may execute `run_analysis.R` some simple modifications are required in the text of `run_analysis.R`.  Specifically, the user should copy `run_analysis.R` to desired directory and edit the working directory (line 2) to suit the local environment.  This is accomplished by either opening `run_analysis.R`:
-
 	- In a text editor to modify the working directory path before loading in R
 	- In RStudio, changing directories in the IDE, then selecting all the code in the `run_analysis.R` window, then clicking on the "Run" button
 
