@@ -18,7 +18,7 @@ This project requires the student to read text files into R dataframes, to analy
 
 5.  `codebook.md`, that describes variables, their units, and other data information in fashion similar to the codebook provided with the source data
 
-6.  a link to the Github repository containing all project files listed here.
+6.  the Github repository link containing these project files:  https://github.com/tritch/Getting-and-Cleaning-Data-Course-Project
 
 ##run_analysis.R user notes
 

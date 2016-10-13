@@ -18,72 +18,72 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 The following variables are common to both the first and second tidy data sets `merged dataset.txt` and `average.data.txt`.
 
 Variable	|	Description
------------------------|----------------------------------------------------------------------------
-subjects	|	Subject ID
-activities	|	The motion activity performed
-tbodyacc-mean(x)	|	Mean time for acceleration of body, X axis
-tbodyacc-mean(y)	|	Mean time for acceleration of body, Y axis
-tbodyacc-mean(z)	|	Mean time for acceleration of body, Z axis
-tbodyacc-std(x)	|	Standard deviation of time for acceleration of body, X axis
-tbodyacc-std(y)	|	Standard deviation of time for acceleration of body, Y axis
-tbodyacc-std(z)	|	Standard deviation of time for acceleration of body, Z axis
-tgravityacc-mean(x)	|	Mean time of acceleration of gravity , X axis
-tgravityacc-mean(y)	|	Mean time of acceleration of gravity , Y axis
-tgravityacc-mean(z)	|	Mean time of acceleration of gravity , Z axis
-tgravityacc-std(x)	|	Standard deviation of time of acceleration of gravity , X axis
-tgravityacc-std(y)	|	Standard deviation of time of acceleration of gravity , Y axis
-tgravityacc-std(z)	|	Standard deviation of time of acceleration of gravity , Z axis
-tbodyaccjerk-mean(x)	|	Mean time of body acceleration jerk , X axis
-tbodyaccjerk-mean(y)	|	Mean time of body acceleration jerk , Y axis
-tbodyaccjerk-mean(z)	|	Mean time of body acceleration jerk , Z axis
-tbodyaccjerk-std(x)	|	Standard deviation of time of body acceleration jerk , X axis
-tbodyaccjerk-std(y)	|	Standard deviation of time of body acceleration jerk , Y axis
-tbodyaccjerk-std(z)	|	Standard deviation of time of body acceleration jerk , Z axis
-tbodygyro-mean(x)	|	Mean body gyroscope measurement , X axis
-tbodygyro-mean(y)	|	Mean body gyroscope measurement , Y axis
-tbodygyro-mean(z)	|	Mean body gyroscope measurement , Z axis
+--------------------|-------------------------------------------------------------------------
+subjects	|	Subject ID, range: [ 1:30 ]
+activities	|	Motion activity performed, range:  [ laying, sitting, standing, walking, walking-downstairs, walking-upstairs ]
+tbodyacc-mean(x)	|	Mean time for acceleration of body, X axis, sec
+tbodyacc-mean(y)	|	Mean time for acceleration of body, Y axis, sec
+tbodyacc-mean(z)	|	Mean time for acceleration of body, Z axis, sec
+tbodyacc-std(x)	|	Standard deviation of time for acceleration of body, X axis, sec
+tbodyacc-std(y)	|	Standard deviation of time for acceleration of body, Y axis, sec
+tbodyacc-std(z)	|	Standard deviation of time for acceleration of body, Z axis, sec
+tgravityacc-mean(x)	|	Mean time of acceleration of gravity , X axis, sec
+tgravityacc-mean(y)	|	Mean time of acceleration of gravity , Y axis, sec
+tgravityacc-mean(z)	|	Mean time of acceleration of gravity , Z axis, sec
+tgravityacc-std(x)	|	Standard deviation of time of acceleration of gravity , X axis, sec
+tgravityacc-std(y)	|	Standard deviation of time of acceleration of gravity , Y axis, sec
+tgravityacc-std(z)	|	Standard deviation of time of acceleration of gravity , Z axis, sec
+tbodyaccjerk-mean(x)	|	Mean time of body acceleration jerk , X axis, sec
+tbodyaccjerk-mean(y)	|	Mean time of body acceleration jerk , Y axis, sec
+tbodyaccjerk-mean(z)	|	Mean time of body acceleration jerk , Z axis, sec
+tbodyaccjerk-std(x)	|	Standard deviation of time of body acceleration jerk , X axis, sec
+tbodyaccjerk-std(y)	|	Standard deviation of time of body acceleration jerk , Y axis, sec
+tbodyaccjerk-std(z)	|	Standard deviation of time of body acceleration jerk , Z axis, sec
+tbodygyro-mean(x)	|	Mean body gyroscope measurement , X axis, m
+tbodygyro-mean(y)	|	Mean body gyroscope measurement , Y axis, m
+tbodygyro-mean(z)	|	Mean body gyroscope measurement , Z axis, m
 tbodygyro-std(x)	|	Standard deviation of body gyroscope measurement , X axis
 tbodygyro-std(y)	|	Standard deviation of body gyroscope measurement , Y axis
 tbodygyro-std(z)	|	Standard deviation of body gyroscope measurement , Z axis
-tbodygyrojerk-mean(x)	|	Mean jerk signal of body, X axis
-tbodygyrojerk-mean(y)	|	Mean jerk signal of body, Y axis
-tbodygyrojerk-mean(z)	|	Mean jerk signal of body, Z axis
-tbodygyrojerk-std(x)	|	Standard deviation of jerk signal of body, X axis
-tbodygyrojerk-std(y)	|	Standard deviation of jerk signal of body, Y axis
-tbodygyrojerk-std(z)	|	Standard deviation of jerk signal of body, Z axis
-tbodyaccmag-mean	|	Mean magnitude of body Acc
-tbodyaccmag-std	|	Standard deviation of magnitude of body Acc
-tgravityaccmag-mean	|	Mean gravity acceleration magnitude
-tgravityaccmag-std	|	Standard deviation of gravity acceleration magnitude
-tbodyaccjerkmag-mean	|	Mean magnitude of body acceleration jerk
-tbodyaccjerkmag-std	|	Standard deviation of magnitude of body acceleration jerk
+tbodygyrojerk-mean(x)	|	Mean jerk signal of body, X axis, m/sec^3
+tbodygyrojerk-mean(y)	|	Mean jerk signal of body, Y axis, m/sec^3
+tbodygyrojerk-mean(z)	|	Mean jerk signal of body, Z axis, m/sec^3
+tbodygyrojerk-std(x)	|	Standard deviation of jerk signal of body, X axis, m/sec^3
+tbodygyrojerk-std(y)	|	Standard deviation of jerk signal of body, Y axis, m/sec^3
+tbodygyrojerk-std(z)	|	Standard deviation of jerk signal of body, Z axis, m/sec^3
+tbodyaccmag-mean	|	Mean magnitude of body Acc, m/sec^2
+tbodyaccmag-std	|	Standard deviation of magnitude of body Acc, m/sec^2
+tgravityaccmag-mean	|	Mean gravity acceleration magnitude, m/sec^2
+tgravityaccmag-std	|	Standard deviation of gravity acceleration magnitude, m/sec^2
+tbodyaccjerkmag-mean	|	Mean magnitude of body acceleration jerk, m/sec^3
+tbodyaccjerkmag-std	|	Standard deviation of magnitude of body acceleration jerk, m/sec^3
 tbodygyromag-mean	|	Mean magnitude of body gyroscope measurement
 tbodygyromag-std	|	Standard deviation of magnitude of body gyroscope measurement
 tbodygyrojerkmag-mean	|	Mean magnitude of body body gyroscope jerk measurement
 tbodygyrojerkmag-std	|	Standard deviation of magnitude of body body gyroscope jerk measurement
-fbodyacc-mean(x)	|	Mean frequency of body acceleration , X axis
-fbodyacc-mean(y)	|	Mean frequency of body acceleration , Y axis
-fbodyacc-mean(z)	|	Mean frequency of body acceleration , Z axis
-fbodyacc-std(x)	|	Standard deviation of frequency of body acceleration , X axis
-fbodyacc-std(y)	|	Standard deviation of frequency of body acceleration , Y axis
-fbodyacc-std(z)	|	Standard deviation of frequency of body acceleration , Z axis
-fbodyaccjerk-mean(x)	|	Mean frequency of body accerlation jerk , X axis
-fbodyaccjerk-mean(y)	|	Mean frequency of body accerlation jerk , Y axis
-fbodyaccjerk-mean(z)	|	Mean frequency of body accerlation jerk , Z axis
-fbodyaccjerk-std(x)	|	Standard deviation frequency of body accerlation jerk , X axis
-fbodyaccjerk-std(y)	|	Standard deviation frequency of body accerlation jerk , Y axis
-fbodyaccjerk-std(z)	|	Standard deviation frequency of body accerlation jerk , Z axis
-fbodygyro-mean(x)	|	Mean frequency of body gyroscope measurement , X axis
-fbodygyro-mean(y)	|	Mean frequency of body gyroscope measurement , Y axis
-fbodygyro-mean(z)	|	Mean frequency of body gyroscope measurement , Z axis
-fbodygyro-std(x)	|	Standard deviation frequency of body gyroscope measurement , X axis
-fbodygyro-std(y)	|	Standard deviation frequency of body gyroscope measurement , Y axis
-fbodygyro-std(z)	|	Standard deviation frequency of body gyroscope measurement , Z axis
-fbodyaccmag-mean	|	Mean frequency of body acceleration magnitude
+fbodyacc-mean(x)	|	Mean frequency of body acceleration , X axis, sec^-1
+fbodyacc-mean(y)	|	Mean frequency of body acceleration , Y axis, sec^-1
+fbodyacc-mean(z)	|	Mean frequency of body acceleration , Z axis, sec^-1
+fbodyacc-std(x)	|	Standard deviation of frequency of body acceleration , X axis, sec^-1
+fbodyacc-std(y)	|	Standard deviation of frequency of body acceleration , Y axis, sec^-1
+fbodyacc-std(z)	|	Standard deviation of frequency of body acceleration , Z axis, sec^-1
+fbodyaccjerk-mean(x)	|	Mean frequency of body accerlation jerk , X axis, sec^-1
+fbodyaccjerk-mean(y)	|	Mean frequency of body accerlation jerk , Y axis, sec^-1
+fbodyaccjerk-mean(z)	|	Mean frequency of body accerlation jerk , Z axis, sec^-1
+fbodyaccjerk-std(x)	|	Standard deviation frequency of body accerlation jerk , X axis, sec^-1
+fbodyaccjerk-std(y)	|	Standard deviation frequency of body accerlation jerk , Y axis, sec^-1
+fbodyaccjerk-std(z)	|	Standard deviation frequency of body accerlation jerk , Z axis, sec^-1
+fbodygyro-mean(x)	|	Mean frequency of body gyroscope measurement , X axis, sec^-1
+fbodygyro-mean(y)	|	Mean frequency of body gyroscope measurement , Y axis, sec^-1
+fbodygyro-mean(z)	|	Mean frequency of body gyroscope measurement , Z axis, sec^-1
+fbodygyro-std(x)	|	Standard deviation frequency of body gyroscope measurement , X axis, sec^-1
+fbodygyro-std(y)	|	Standard deviation frequency of body gyroscope measurement , Y axis, sec^-1
+fbodygyro-std(z)	|	Standard deviation frequency of body gyroscope measurement , Z axis, sec^-1
+fbodyaccmag-mean	|	Mean frequency of body acceleration magnitude, sec^-1
 fbodyaccmag-std	|	Standard deviation of frequency of body acceleration magnitude
-fbodybodyaccjerkmag-mean	|	Mean frequency of body acceleration jerk magnitude
-fbodybodyaccjerkmag-std	|	Standard deviation of frequency of body acceleration jerk magnitude
-fbodybodygyromag-mean	|	Mean frequency of magnitude of body gyroscope measurement
-fbodybodygyromag-std	|	Standard deviation of frequency of magnitude of body gyroscope measurement
-fbodybodygyrojerkmag-mean	|	Mean frequency of magnitude of body gyroscope jerk measurement
-fbodybodygyrojerkmag-std	|	Standard deviation frequency of magnitude of body gyroscope jerk measurement
+fbodybodyaccjerkmag-mean	|	Mean frequency of body acceleration jerk magnitude, sec^-1
+fbodybodyaccjerkmag-std	|	Standard deviation of frequency of body acceleration jerk magnitude, sec^-1
+fbodybodygyromag-mean	|	Mean frequency of magnitude of body gyroscope measurement, sec^-1
+fbodybodygyromag-std	|	Standard deviation of frequency of magnitude of body gyroscope measurement, sec^-1
+fbodybodygyrojerkmag-mean	|	Mean frequency of magnitude of body gyroscope jerk measurement, sec^-1
+fbodybodygyrojerkmag-std	|	Standard deviation frequency of magnitude of body gyroscope jerk measurement, sec^-1
