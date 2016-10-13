@@ -5,9 +5,9 @@ Human Activity Recognition experiments were conducted with a group of thirty vol
 
 The accelerometer and gyroscope raw data was processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window).  The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity.  The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used.  From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-##Citation
+###Citation
 
-###Use of this dataset in publications must be acknowledged by referencing the following publication:
+Use of this dataset in publications must be acknowledged by referencing the following publication:
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
@@ -15,7 +15,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 ##Variable Descriptions
 
-###The following variables are common to both the first and second tidy data sets `merged dataset.txt` and `average.data.txt`.  Variables and their meaning are listed in the table below.
+The following variables are common to both the first and second tidy data sets `merged dataset.txt` and `average.data.txt`.
 
 Variable	|	Description
 -----------------------|----------------------------------------------------------------------------
