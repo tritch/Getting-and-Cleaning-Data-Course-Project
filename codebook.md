@@ -5,6 +5,8 @@ Human Activity Recognition experiments were conducted with a group of thirty vol
 
 The accelerometer and gyroscope raw data was processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window).  The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity.  The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used.  From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
+The deliverable of this project is the tidy dataset `average.data.txt`, which is described in detail in README.md.
+
 ###Citation
 
 Use of this dataset in publications must be acknowledged by referencing the following publication:
@@ -15,7 +17,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 ##Variable Descriptions
 
-The following variables are common to both the first and second tidy data sets `merged dataset.txt` and `average.data.txt`.
+The following variables are included in the tidy data set `average.data.txt`.
 
 Variable	|	Description
 --------------------|-------------------------------------------------------------------------

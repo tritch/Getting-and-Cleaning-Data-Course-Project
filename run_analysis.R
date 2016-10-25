@@ -81,10 +81,11 @@ activityLabelsDF[ , "activityLabel"] <-
 	gsub( "_", "-", tolower( activityLabelsDF[ , "activityLabel"] ) )
 # remap activities$activities labels from numeric to descriptive text
 activities$activities <- activityLabelsDF[activities$activities, "activityLabel"]
-# merge subjects vector, activities vector, and dataMeanSd dataframe
+# merge subjects vector, activities vector, and dataMeanSd dataframe -> intermediate dataset `data`
 data <- cbind(subjects, activities, dataMeanSd)
-# write first dataset result to storage
-write.table(data, "../merged dataset.txt", row.names = F)
+# optional:  write intermediate dataset result to storage
+# write.table(data, "../merged dataset.txt", row.names = F)
+#
 # generate second dataset.  Averages are calculated by subject, by activity
 average.data <- aggregate(data, by=list(subjects=data$subjects, activities=data$activities), FUN=mean)
 average.data <- average.data[, !(colnames(average.data) %in% c("activities", "subjects"))]
